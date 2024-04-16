@@ -1,5 +1,5 @@
 import "./index.css";
-
+import image from "/assets/images/avatar-jessica.jpeg";
 function App() {
   return (
     <>
@@ -19,7 +19,7 @@ function App() {
         >
           <div>
             <img
-              src="/assets/images/avatar-jessica.jpeg"
+              src={image}
               alt="description of the image"
               style={{
                 borderRadius: "50%",
@@ -64,10 +64,11 @@ function App() {
               width: "304px",
             }}
           >
-            <div style={{}}>dasdas</div>
-            <div style={{}}>fsfs</div>
-            <div style={{}}>fsfs</div>
-            <div style={{}}>fsfs</div>
+            <div style={{}}>Github</div>
+            <div style={{}}>Frontend Mentor</div>
+            <div style={{}}>Linkedin</div>
+            <div style={{}}>Twitter</div>
+            <div style={{}}>Instagram</div>
           </div>
         </div>
       </div>
