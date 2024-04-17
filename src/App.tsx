@@ -4,9 +4,14 @@ function App() {
   return (
     <>
       <div className="bg-black min-h-lvh w-full flex justify-center items-center">
-        <div className="bg-[#1F1F1F] m-auto flex flex-col items-center">
+        <div className="bg-[#1F1F1F] m-auto flex flex-col items-center rounded-[12px]">
           <div
-            style={{ display: "flex", flexDirection: "column", gap: "24px" }}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "24px",
+              borderRadius: "12px",
+            }}
           >
             <div style={{ padding: "40px 148px 24px 148px" }}>
               <img
