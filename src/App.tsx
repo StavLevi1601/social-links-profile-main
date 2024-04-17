@@ -3,72 +3,123 @@ import image from "/assets/images/avatar-jessica.jpeg";
 function App() {
   return (
     <>
-      <div
-        className="bg-black min-h-lvh w-full flex justify-center items-center"
-        style={{ backgroundColor: "#00000", margin: "auto" }}
-      >
-        <div
-          className="bg-custom-card-gray min-h-36"
-          style={{
-            height: "611px",
-            width: "304px",
-            backgroundColor: "#1F1F1F",
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <div>
-            <img
-              src={image}
-              alt="description of the image"
+      <div className="bg-black min-h-lvh w-full flex justify-center items-center">
+        <div className="bg-[#1F1F1F] m-auto flex flex-col items-center">
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "24px" }}
+          >
+            <div style={{ padding: "40px 148px 24px 148px" }}>
+              <img
+                src={image}
+                alt="description of the image"
+                className="rounded-full w-[88px] h-[88px]"
+              />
+            </div>
+            <div style={{}}>
+              <div
+                style={{
+                  color: "white",
+                  textAlign: "center",
+                }}
+              >
+                Jessica Randall
+              </div>
+              <div
+                style={{
+                  color: "#C4F82A",
+                  textAlign: "center",
+                }}
+              >
+                London, United Kingdom
+              </div>
+            </div>
+            <div
               style={{
-                borderRadius: "50%",
-                width: "88px",
-                height: "88px",
-                margin: "40px auto",
+                color: "white",
+                textAlign: "center",
+                marginBottom: "24px",
               }}
-            />
+            >
+              "Front-end developer and avid reader."
+            </div>
           </div>
           <div
             style={{
-              color: "white",
-              textAlign: "center",
-            }}
-          >
-            Jessica Randall
-          </div>
-          <div
-            style={{
-              color: "#C4F82A",
-              textAlign: "center",
-            }}
-          >
-            London, United Kingdom
-          </div>
-          <div
-            style={{
-              color: "white",
-              textAlign: "center",
-            }}
-          >
-            "Front-end developer and avid reader."
-          </div>
-          <div
-            style={{
-              backgroundColor: "#333333",
-
               flexDirection: "column",
               gap: "10px",
               display: "flex",
-              height: "45px",
-              width: "304px",
             }}
           >
-            <div style={{}}>Github</div>
-            <div style={{}}>Frontend Mentor</div>
-            <div style={{}}>Linkedin</div>
-            <div style={{}}>Twitter</div>
-            <div style={{}}>Instagram</div>
+            <div
+              style={{
+                backgroundColor: "#333333",
+                color: "white",
+                height: "45px",
+                width: "304px",
+                borderRadius: "8px",
+                textAlign: "center",
+                padding: "12px",
+              }}
+            >
+              Github
+            </div>
+            <div
+              style={{
+                backgroundColor: "#333333",
+                color: "white",
+
+                height: "45px",
+                width: "304px",
+                borderRadius: "8px",
+                textAlign: "center",
+                padding: "12px",
+              }}
+            >
+              Frontend Mentor
+            </div>
+            <div
+              style={{
+                backgroundColor: "#333333",
+                color: "white",
+
+                height: "45px",
+                width: "304px",
+                borderRadius: "8px",
+                textAlign: "center",
+                padding: "12px",
+              }}
+            >
+              Linkedin
+            </div>
+            <div
+              style={{
+                backgroundColor: "#333333",
+                color: "white",
+
+                height: "45px",
+                width: "304px",
+                borderRadius: "8px",
+                textAlign: "center",
+                padding: "12px",
+              }}
+            >
+              Twitter
+            </div>
+            <div
+              style={{
+                backgroundColor: "#333333",
+                color: "white",
+
+                height: "45px",
+                width: "304px",
+                borderRadius: "8px",
+                textAlign: "center",
+                padding: "12px",
+                marginBottom: "40px",
+              }}
+            >
+              Instagram
+            </div>
           </div>
         </div>
       </div>
