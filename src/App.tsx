@@ -1,6 +1,13 @@
 import "./index.css";
 import image from "/assets/images/avatar-jessica.jpeg";
 function App() {
+  const links = [
+    "GitHub",
+    "Frontend Mentor",
+    "Linkedin",
+    "Twitter",
+    "Instagram",
+  ];
   return (
     <>
       <div className="bg-black min-h-lvh w-full flex justify-center items-center">
@@ -19,26 +26,21 @@ function App() {
                 London, United Kingdom
               </div>
             </div>
-            <div className="text-white text-center mb-px">
+            <div className="text-white text-center mb-[24px]">
               "Front-end developer and avid reader."
             </div>
           </div>
-          <div className="flex flex-col gap-[10px]">
-            <div className="bg-[#333333] text-white h-[45px] w-[304px] rounded-[8px] text-center p-[12px]">
-              Github
-            </div>
-            <div className="bg-[#333333] text-white h-[45px] w-[304px] rounded-[8px] text-center p-[12px]">
-              Frontend Mentor
-            </div>
-            <div className="bg-[#333333] text-white h-[45px] w-[304px] rounded-[8px] text-center p-[12px]">
-              Linkedin
-            </div>
-            <div className="bg-[#333333] text-white h-[45px] w-[304px] rounded-[8px] text-center p-[12px]">
-              Twitter
-            </div>
-            <div className="bg-[#333333] text-white h-[45px] w-[304px] rounded-[8px] text-center p-[12px] mb-[40px]">
-              Instagram
-            </div>
+          <div className="flex flex-col gap-[16px] ">
+            {links.map((link, index) => (
+              <div
+                key={link}
+                className={`bg-[#333333] text-white h-[45px] w-[304px] rounded-[8px] text-center p-[12px] ${
+                  index === links.length - 1 ? "mb-[24px]" : ""
+                }`}
+              >
+                {link}
+              </div>
+            ))}
           </div>
         </div>
       </div>
