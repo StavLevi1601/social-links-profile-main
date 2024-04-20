@@ -28,7 +28,7 @@ function App() {
               "Front-end developer and avid reader."
             </div>
           </div>
-          <div className="flex flex-col gap-[16px] ">
+          <div className="flex flex-col gap-[16px] text-white ">
             {links.map((link) => (
               <div
                 key={link}
