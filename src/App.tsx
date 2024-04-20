@@ -1,13 +1,9 @@
 import "./index.css";
 import image from "/assets/images/avatar-jessica.jpeg";
+
+const links = ["GitHub", "Frontend Mentor", "Linkedin", "Twitter", "Instagram"];
+
 function App() {
-  const links = [
-    "GitHub",
-    "Frontend Mentor",
-    "Linkedin",
-    "Twitter",
-    "Instagram",
-  ];
   return (
     <>
       <div className="bg-black min-h-lvh w-full flex justify-center items-center">
